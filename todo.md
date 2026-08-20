@@ -49,4 +49,6 @@
 - [x] Capture inspectable UI evidence showing Mohammed Faizan Raza in the dashboard profile area
 - [x] Capture inspectable UI evidence showing Mohammed Faizan Raza in the Admin user directory
 - [x] After saving that evidence, then mark the OAuth/browser-verification todos complete
-- [ ] Save a fresh checkpoint after the OAuth name-preservation fix, passing tests, and post-fix sign-in verification
+- [x] Save a fresh checkpoint after the OAuth name-preservation fix, passing tests, and post-fix sign-in verification
+- [x] Create an internship-ready README for the Secure Web Application repository
+- [ ] Sync and verify the README in GitHub
