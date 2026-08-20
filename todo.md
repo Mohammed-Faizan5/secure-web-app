@@ -1,0 +1,30 @@
+# Project TODO
+
+- [x] Define secure-app domain vocabulary and threat-model assumptions
+- [x] Add database tables for secure notes and audit events
+- [x] Apply and verify the database migration
+- [x] Add Zod schemas for note inputs and audit event inputs
+- [x] Implement authenticated note create/read/update/delete procedures with ownership validation
+- [x] Implement audit logging for login, logout, and note changes
+- [x] Implement admin-only user directory and audit-log procedures
+- [x] Build polished authenticated dashboard shell and navigation
+- [x] Build personal notes management interface with validation and error states
+- [x] Build admin dashboard with user roles and last sign-in timestamps
+- [x] Build security information page documenting OWASP controls
+- [x] Verify OAuth session state, protected routes, role gates, and logout flow
+- [x] Add or update Vitest coverage for notes, ownership, roles, validation, and audit logging
+- [x] Run type checks, tests, and visual verification
+- [ ] Save final project checkpoint and deliver the application version
+- [x] Add a shared Zod schema for audit-event inputs and validate before persistence
+- [x] Record a logout audit event before clearing the authenticated session
+- [x] Add explicit query error and retry UI to the notes page
+- [x] Add explicit loading, empty, and error states to admin user and audit panels
+- [x] Add Vitest tests for note CRUD, ownership rejection, admin authorization, and login/logout audit creation
+- [x] Add an explicit audit-panel error state with retry handling
+- [x] Expand tests for successful note create/update/delete and login/logout audit creation
+- [x] Manually verify unauthenticated route gating, authenticated notes access, admin-role visibility, and logout behavior
+- [x] Document end-to-end auth/session verification beyond procedure-level tests
+- [x] Diagnose OAuth portal 403 CloudFront error during final browser verification
+- [x] Complete or document an alternate end-to-end authentication verification path if the external OAuth portal remains unavailable
+- [ ] When OAuth portal access works, manually verify authenticated Notes access, admin navigation, and sign-out return to the sign-in gate
+- [ ] If external OAuth remains unavailable, add or document a UI-level verification harness for route gating and logout transitions

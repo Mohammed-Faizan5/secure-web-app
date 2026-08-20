@@ -175,3 +175,25 @@
     }
   }
 }
+
+
+@layer base {
+  html {
+    font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  }
+
+  body {
+    min-width: 320px;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: oklch(0.82 0.12 195);
+    color: oklch(0.2 0.03 220);
+  }
+
+  :focus-visible {
+    outline: 3px solid oklch(0.76 0.13 195);
+    outline-offset: 2px;
+  }
+}
