@@ -14,7 +14,7 @@
 - [x] Verify OAuth session state, protected routes, role gates, and logout flow
 - [x] Add or update Vitest coverage for notes, ownership, roles, validation, and audit logging
 - [x] Run type checks, tests, and visual verification
-- [ ] Save final project checkpoint and deliver the application version
+- [x] Save final project checkpoint and deliver the application version
 - [x] Add a shared Zod schema for audit-event inputs and validate before persistence
 - [x] Record a logout audit event before clearing the authenticated session
 - [x] Add explicit query error and retry UI to the notes page
@@ -28,11 +28,25 @@
 - [x] Complete or document an alternate end-to-end authentication verification path if the external OAuth portal remains unavailable
 - [x] When OAuth portal access works, manually verify authenticated Notes access, admin navigation, and sign-out return to the sign-in gate
 - [x] If external OAuth remains unavailable, add or document a UI-level verification harness for route gating and logout transitions
-- [ ] When the OAuth portal is available, manually verify authenticated Notes access, admin navigation, and sign-out return to the sign-in gate
+- [x] When the OAuth portal is available, manually verify authenticated Notes access, admin navigation, and sign-out return to the sign-in gate
 - [x] Keep the documented UI auth verification harness and link it from the delivery notes as the fallback verification path while external OAuth remains unavailable
 - [x] Update the authenticated administrator display name to Mohammed Faizan Raza
 - [x] Verify the new administrator name in the dashboard and admin console
 - [x] Open the authenticated dashboard and admin console after the profile update, then confirm the UI text shows Mohammed Faizan Raza in the profile area and admin user directory
 - [x] Save evidence of the verified administrator-name UI state before marking dashboard/admin-name verification complete
-- [ ] When an authenticated preview session is available, open / and /admin after the profile update and verify the UI text visibly shows Mohammed Faizan Raza in the profile area and admin user directory
-- [ ] Capture verifiable evidence of the updated UI state before marking the administrator-name verification complete
+- [x] When an authenticated preview session is available, open / and /admin after the profile update and verify the UI text visibly shows Mohammed Faizan Raza in the profile area and admin user directory
+- [x] Capture verifiable evidence of the updated UI state before marking the administrator-name verification complete
+- [x] When OAuth works, manually verify in the browser that Notes opens for the authenticated user, Admin opens for the admin user, and Sign out returns to the unauthenticated sign-in gate
+- [x] Capture verifiable UI evidence after the profile-name update showing Mohammed Faizan Raza on both the dashboard profile area and the Admin user directory
+- [x] Only then mark the OAuth-dependent browser verification and administrator-name UI verification todos complete
+- [x] Preserve Mohammed Faizan Raza across OAuth sign-out and sign-in cycles instead of overwriting it with the provider name
+- [x] Add regression coverage for preserving an existing custom display name during OAuth user upsert
+- [x] Verify the corrected name after a fresh sign-in and save a new checkpoint
+- [x] Save a new checkpoint after the OAuth name-persistence fix and post-fix sign-in verification
+- [x] Capture verifiable evidence of the full authenticated browser flow: Notes opens, Admin opens, and Sign out returns to the unauthenticated gate
+- [x] Capture verifiable UI evidence showing Mohammed Faizan Raza in both the dashboard profile area and the Admin user directory
+- [x] After collecting that evidence, then mark the OAuth/browser-verification todos complete
+- [x] Capture inspectable UI evidence showing Mohammed Faizan Raza in the dashboard profile area
+- [x] Capture inspectable UI evidence showing Mohammed Faizan Raza in the Admin user directory
+- [x] After saving that evidence, then mark the OAuth/browser-verification todos complete
+- [ ] Save a fresh checkpoint after the OAuth name-preservation fix, passing tests, and post-fix sign-in verification

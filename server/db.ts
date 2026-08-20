@@ -38,6 +38,7 @@ export async function upsertUser(user: InsertUser): Promise<void> {
   }
 
   try {
+    const existingUser = await getUserByOpenId(user.openId);
     const values: InsertUser = {
       openId: user.openId,
     };
@@ -47,6 +48,9 @@ export async function upsertUser(user: InsertUser): Promise<void> {
     type TextField = (typeof textFields)[number];
 
     const assignNullable = (field: TextField) => {
+      // Preserve a locally customized display name across OAuth sign-ins.
+      // The provider's profile name is treated as the initial value only.
+      if (field === "name" && existingUser?.name) return;
       const value = user[field];
       if (value === undefined) return;
       const normalized = value ?? null;
