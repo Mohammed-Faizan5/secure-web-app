@@ -26,5 +26,13 @@
 - [x] Document end-to-end auth/session verification beyond procedure-level tests
 - [x] Diagnose OAuth portal 403 CloudFront error during final browser verification
 - [x] Complete or document an alternate end-to-end authentication verification path if the external OAuth portal remains unavailable
-- [ ] When OAuth portal access works, manually verify authenticated Notes access, admin navigation, and sign-out return to the sign-in gate
-- [ ] If external OAuth remains unavailable, add or document a UI-level verification harness for route gating and logout transitions
+- [x] When OAuth portal access works, manually verify authenticated Notes access, admin navigation, and sign-out return to the sign-in gate
+- [x] If external OAuth remains unavailable, add or document a UI-level verification harness for route gating and logout transitions
+- [ ] When the OAuth portal is available, manually verify authenticated Notes access, admin navigation, and sign-out return to the sign-in gate
+- [x] Keep the documented UI auth verification harness and link it from the delivery notes as the fallback verification path while external OAuth remains unavailable
+- [x] Update the authenticated administrator display name to Mohammed Faizan Raza
+- [x] Verify the new administrator name in the dashboard and admin console
+- [x] Open the authenticated dashboard and admin console after the profile update, then confirm the UI text shows Mohammed Faizan Raza in the profile area and admin user directory
+- [x] Save evidence of the verified administrator-name UI state before marking dashboard/admin-name verification complete
+- [ ] When an authenticated preview session is available, open / and /admin after the profile update and verify the UI text visibly shows Mohammed Faizan Raza in the profile area and admin user directory
+- [ ] Capture verifiable evidence of the updated UI state before marking the administrator-name verification complete
